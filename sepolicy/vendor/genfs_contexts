@@ -15,7 +15,7 @@ genfscon sysfs /devices/platform/battery/power_supply/bms     	       	       	 
 genfscon sysfs /devices/platform/11004000.i2c7/i2c-7/7-0055/power_supply/parallel                                               u:object_r:vendor_sysfs_parallel_supply:s0
 
 # Leds
-genfscon sysfs /devices/platform/leds-mt65xx/leds/lcd-backlight                           					u:object_r:sysfs_leds:s0
+
 
 # Performance
 genfscon proc /sys/vm/dirty_writeback_centisecs      										u:object_r:proc_vm_dirty:s0
