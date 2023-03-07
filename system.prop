@@ -84,117 +84,82 @@ ro.zram.periodic_wb_delay_hours=24
 
 
 # Boost Framework & Memory management tuning
-
 # Increase/Reduce AOSP boostframework default boosting durations (int)
-
 persist.sys.powerhal.interaction.max
 
 # Increase/Reduce Scarlet boostframework system boost boosting durations (int)
-
 persist.sys.powerhal.interaction.max_boost 
 
 # Service Reschedule (boolean)
-
 persist.sys.am.reschedule_service
 
 # Maximum number of cached processes allowed. (int)
-
 persist.sys.fw.bg_apps_limit
 
 # Total memory capacity where memory trimming starts (int)
-
 persist.sys.fw.trim_enable_memory
 
 # Maximum number of phantom processes before the system starts trimming phantom processes. (int)
-
 persist.sys.fw.bg_phantom_proc_limit
 
 # Camera
 
 # Exposing aux/camera privileges to OEM cameras (string)
-
 persist.sys.aux.camera_oem_package
 
 # Code linaro LMKD properties and its AOSP counterparts - refer to perfconfigstore.xml (if available) for tuning purposes
-
 # kill_heaviest_task_dup (boolean)
-
 ro.lmk.kill_heaviest_task
 
 # kill_timeout_ms_dup (int)
-
 ro.lmk.kill_timeout_ms
 
 # use_new_strategy_dup (boolean)
-
 ro.lmk.use_new_strategy
 
 # thrashing_threshold (int)
-
 ro.lmk.thrashing_limit
 
 # thrashing_decay (int)
-
 ro.lmk.thrashing_limit_decay
 
 # nstrat_low_swap (int)
-
 ro.lmk.swap_free_low_percentage
 
 # nstrat_psi_partial_ms (int)
-
 ro.lmk.psi_partial_stall_ms
 
 # nstrat_psi_complete_ms (int)
-
 ro.lmk.psi_complete_stall_ms
 
 # forcefully enable use_inkernel_interface (boolean)
-
 ro.vendor.lmk.force_inkernel_lmk
 
 # enable userspace lmkd (boolean)
-
 ro.lmk.enable_userspace_lmk
 
 # QTI ULMK properties (no AOSP counterpart)
 
 # watermark check (boolean)
-
 ro.lmk.enable_watermark_check
 
 # others (int)
-
 ro.lmk.psi_scrit_complete_stall_ms
-
 ro.lmk.nstrat_wmark_boost_factor
-
 ro.lmk.super_critical
-
 ro.lmk.direct_reclaim_pressure
-
 ro.lmk.reclaim_scan_threshold
 
 # App compaction properties
-
 persist.sys.appcompact.enable_app_compact
-
 persist.sys.appcompact.full_compact_type
-
 persist.sys.appcompact.some_compact_type
-
 persist.sys.appcompact.compact_throttle_somesome
-
 persist.sys.appcompact.compact_throttle_somefull
-
 persist.sys.appcompact.compact_throttle_fullsome
-
 persist.sys.appcompact.compact_throttle_fullfull
-
 persist.sys.appcompact.compact_throttle_bfgs
-
 persist.sys.appcompact.compact_throttle_persistent
-
 persist.sys.appcompact.rss_throttle_kb
-
 persist.sys.appcompact.delta_rss_throttle_kb
+
